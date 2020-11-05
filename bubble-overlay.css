@@ -1,0 +1,91 @@
+.big-bubble-overlay {
+	position: absolute;
+	overflow: hidden;
+	width: 75vh;
+	height: 75vh;
+	z-index: -1;
+	left: 0;
+    bottom: 0;
+    
+}
+.big-triangle-overlay {
+	position: absolute;
+	overflow: hidden;
+	width: 100vh;
+	height: 100vh;
+	z-index: -1;
+	right: 0;
+    bottom: 0;
+	
+}
+.big-triangle-overlay::before{
+	position: absolute;
+	content: "";
+	height: 150%;
+	width: 40%;
+	
+	transform: rotate(45deg);
+	right: 0;
+	bottom: -10;
+	background-color: rgba(87, 63, 98, 0.164);
+}
+
+.big-bubble-overlay::before {
+	content: "";
+	position: absolute;
+	transform: translate(-40%, 40%);
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: rgba(180, 145, 243, .164)
+}
+
+
+.bubble-overlay1-right,
+.bubble-overlay2-right,
+.bubble-overlay1,
+.bubble-overlay2,
+.bubble-overlay3 {
+	position: absolute;
+	width: 25vh;
+	height: 25vh;
+	z-index: -1;
+	left: 45vh;
+	bottom: 25vh;
+	border-radius: 50%;
+	background-color: rgba(199, 156, 219, .164)
+}
+.bubble-overlay2 {
+	width: 15vh;
+	height: 15vh;
+	left: 35vh;
+	bottom: 45vh;
+	background-color: rgba(92, 79, 107, .164)
+}
+
+.bubble-overlay3 {
+	width: 5vh;
+	height: 5vh;
+	left: 37vh;
+	bottom: 60vh;
+	background-color: rgba(166, 116, 231, .164)
+}
+
+.bubble-overlay1-right {
+	width: 10vh;
+	height: 10vh;
+	left: 95vh;
+	top: 5vh;
+	background-color: rgba(199, 156, 219, .164)
+}
+
+.bubble-overlay2-right {
+	width: 5vh;
+	height: 5vh;
+	left: 85vh;
+	top: 30vh;
+	background-color: rgba(199, 156, 219, .164)
+}
+
+
+
